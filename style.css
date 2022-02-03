@@ -41,9 +41,26 @@
 }
 
 #link a:hover{
-    transform: translateX(30px);
+    transform: translateX(50px);
 }
 #link a:nth-of-type(2n):hover{
-    transform: translateX(-30px);
+    transform: translateX(-50px);
 }
 
+@media (min-width:360px) and (max-width:740px){
+    #link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #link a{
+        padding: 0.4em 1em 0.4em 1em;
+    }
+    #link a:nth-of-type(3){
+        padding: 0.4em 1.5em 0.4em 1.5em;
+    }
+    #link a:nth-of-type(4){
+        padding: 0.4em 1.5em 0.4em 1.5em;
+    }
+    
+}
